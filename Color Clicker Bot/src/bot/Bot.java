@@ -21,7 +21,7 @@ public class Bot {
 	static JFrame frame = new JFrame("Color clicker bot");
 	static JPanel panel = new JPanel(new GridBagLayout());
 	static GridBagConstraints c = new GridBagConstraints();
-	static JButton button = new JButton("Click to start the bot(Starts in 3 seconds)"); // Press
+	static JButton button = new JButton("Click to start the bot (Starts in 3 seconds)"); // Press
 																						// to
 																						// initiate
 																						// the
@@ -100,7 +100,7 @@ class botThread extends Thread {
 																		// stored.
 			// System.out.println("Start");
 			while (resume) { // Runs until game is over.
-				bot.robot.mouseMove(mouseX, mouseY); // Moves mouse back to
+				//bot.robot.mouseMove(mouseX, mouseY); // Moves mouse back to
 														// first circle.
 				startEvent(mouseX, mouseY, bot); // Starts the scanning for
 													// improper color.
