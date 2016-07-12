@@ -15,7 +15,7 @@ function setUpGame(){
 	var color =   ("rgb(" + red + "," + green + "," +  blue + ")");
 	for(i=0; i<circles.length; i++){
 		circles[i].style.backgroundColor = color;
-		circles[i].setAttribute("onclick","");
+		circles[i].setAttribute("onclick","lowerScore()");
 	}
 	var selected = circles[Math.floor(Math.random()*circles.length)];
 	var colorList = [red,green,blue];
@@ -61,4 +61,10 @@ function finish(){
 	document.getElementById("score").style.visibility = "hidden";
 	document.getElementById("start").style.display = "initial";
 	document.getElementById("start").innerHTML = "Press to restart";
+}
+
+
+function lowerScore(){
+	score--
+	document.getElementById("score").innerHTML = "Score:" + score;
 }
