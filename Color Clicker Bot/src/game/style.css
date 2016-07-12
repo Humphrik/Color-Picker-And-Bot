@@ -1,0 +1,32 @@
+html, body{ 
+	height: 100%; 
+	width: 100%;
+	}
+			
+#game{
+	width:800px;
+	height:800px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	border-collapse: collapse;
+	margin:auto;
+}			
+#game td{
+	width:25%;
+	height:25%;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 25px:
+}
+
+#game td .circle{
+	background-color:white;
+	width:80%;
+	height:80%;
+	border-radius:50%;
+	margin:auto;
+}
+
+#score{visibility:hidden;}
